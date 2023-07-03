@@ -4,7 +4,7 @@ function App() {
   const comments = [
     {id: 1, text: 'Comment one'},
     {id: 2, text: 'Comment two'},
-    {id: 3, text: 'Comment three'}
+    {id: 3, text: 'Comment seven thousand'}
   ]
 
   const loading = false
