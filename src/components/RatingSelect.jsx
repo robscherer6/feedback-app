@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function RatingSelect({ select }) {
+const RatingSelect = ({ select }) => {
   const [selected, setSelected] = useState(10);
 
   const handleChange = (e) => {
@@ -18,7 +18,7 @@ function RatingSelect({ select }) {
           onChange={handleChange}
           checked={selected === 1}
         />
-        <label htmlFor="1">1</label>
+        <label htmlFor="num1">1</label>
       </li>
       <li>
         <input
@@ -29,7 +29,7 @@ function RatingSelect({ select }) {
           onChange={handleChange}
           checked={selected === 2}
         />
-        <label htmlFor="2">2</label>
+        <label htmlFor="num2">2</label>
       </li>
       <li>
         <input
@@ -40,7 +40,7 @@ function RatingSelect({ select }) {
           onChange={handleChange}
           checked={selected === 3}
         />
-        <label htmlFor="3">3</label>
+        <label htmlFor="num3">3</label>
       </li>
       <li>
         <input
@@ -51,7 +51,7 @@ function RatingSelect({ select }) {
           onChange={handleChange}
           checked={selected === 4}
         />
-        <label htmlFor="4">4</label>
+        <label htmlFor="num4">4</label>
       </li>
       <li>
         <input
@@ -62,7 +62,7 @@ function RatingSelect({ select }) {
           onChange={handleChange}
           checked={selected === 5}
         />
-        <label htmlFor="5">5</label>
+        <label htmlFor="num5">5</label>
       </li>
       <li>
         <input
@@ -73,7 +73,7 @@ function RatingSelect({ select }) {
           onChange={handleChange}
           checked={selected === 6}
         />
-        <label htmlFor="6">6</label>
+        <label htmlFor="num6">6</label>
       </li>
       <li>
         <input
@@ -84,7 +84,7 @@ function RatingSelect({ select }) {
           onChange={handleChange}
           checked={selected === 7}
         />
-        <label htmlFor="7">7</label>
+        <label htmlFor="num7">7</label>
       </li>
       <li>
         <input
@@ -95,7 +95,7 @@ function RatingSelect({ select }) {
           onChange={handleChange}
           checked={selected === 8}
         />
-        <label htmlFor="8">8</label>
+        <label htmlFor="num8">8</label>
       </li>
       <li>
         <input
@@ -106,7 +106,7 @@ function RatingSelect({ select }) {
           onChange={handleChange}
           checked={selected === 9}
         />
-        <label htmlFor="9">9</label>
+        <label htmlFor="num9">9</label>
       </li>
       <li>
         <input
@@ -117,9 +117,9 @@ function RatingSelect({ select }) {
           onChange={handleChange}
           checked={selected === 10}
         />
-        <label htmlFor="10">10</label>
+        <label htmlFor="num10">10</label>
       </li>
     </ul>
   );
-}
+};
 export default RatingSelect;
