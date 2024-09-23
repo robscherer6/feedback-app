@@ -19,19 +19,18 @@ const FeedbackForm = () => {
     }
   }, [feedbackEdit])
 
-  const handleTextChange = (e) => {
-    console.log('text: ', text);
-    if (text === "") {
+  const handleTextChange = ({ target: { value }}) => {
+    if (value === "") {
       setBtnDisabled(true);
       setMessage(null);
-    } else if (text.length !== "" && text.trim().length <= 10) {
-      setBtnDisabled(true);
+    } else if (value.trim().length <= 10) {
       setMessage("Text must be at least 10 characters.");
+      setBtnDisabled(true);
     } else {
       setMessage(null);
       setBtnDisabled(false);
     }
-    setText(e.target.value);
+    setText(value);
   };
 
   const handleSubmit = (e) => {
